@@ -28,6 +28,7 @@
             jupyter
             matplotlib
             scikit-learn
+            seaborn
           ]))
         ];
 
