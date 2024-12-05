@@ -1,5 +1,6 @@
 my_data.csv
 generated_dataset.csv
+*sync-conflict*
 
 # Created by https://www.toptal.com/developers/gitignore/api/linux,windows,python,jupyternotebooks,intellij,visualstudiocode,direnv
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,windows,python,jupyternotebooks,intellij,visualstudiocode,direnv
