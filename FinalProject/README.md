@@ -26,9 +26,9 @@ Separation:
 
 ## Relatorio CripsDM:
 - CrispDM:
-  - I. Business Understanding (Introdução) (Jonnas)
+  - I. Business Understanding (Jonnas)
   - II. Data Understanding (Vicente)
   - III. Data Preparation (Vicente e Jonnas)
   - IV. Modeling (Vicente e Jonnas)
-  - V. Evaluation (Conclusões) (Os 2)
+  - V. Evaluation (Os 2)
   - (VI. Deployment)
