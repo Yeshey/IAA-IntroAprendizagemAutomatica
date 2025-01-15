@@ -9,7 +9,7 @@ Separation:
 ## Data preparation & Modelling:
 - strategies to handle missing values:
   - Deletion (os 2)
-  - Outra (Vicente)
+  - Substituir pelo valor mais frequente da categoria (Vicente) 
   - Outra (Jonnas)
 - Mudanças ao Dataset:
   - Data reduction (Vicente)
