@@ -15,7 +15,7 @@ Separation:
   - Data reduction (Vicente)
   - Normalization (Jonnas)
   - discretization (Vicente)
-- Modelos: (Os 2)
+- Modelos:
   - Supervised Learning: (Jonnas)
     - Decision Trees;
     - Multi-layer perceptron;
