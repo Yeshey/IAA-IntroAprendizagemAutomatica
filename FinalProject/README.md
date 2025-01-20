@@ -15,7 +15,7 @@ Separation:
   - Data reduction (Vicente)
   - Normalization (Jonnas)
   - discretization (Vicente)
-- Modelos: (podemos usar o sklearn)
+- Modelos: (Os 2)
   - Supervised Learning: (Jonnas)
     - Decision Trees;
     - Multi-layer perceptron;
@@ -29,6 +29,5 @@ Separation:
   - I. Business Understanding (Jonnas)
   - II. Data Understanding (Vicente)
   - III. Data Preparation (Vicente e Jonnas)
-  - IV. Modeling (Vicente e Jonnas)
+  - IV. Modeling (Os 2)
   - V. Evaluation (Os 2)
-  - (VI. Deployment)
