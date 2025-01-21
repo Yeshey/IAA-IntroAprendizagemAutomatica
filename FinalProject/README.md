@@ -31,3 +31,9 @@ Separation:
   - III. Data Preparation (Vicente e Jonnas)
   - IV. Modeling (Os 2)
   - V. Evaluation (Os 2)
+
+
+Site com como se faz: https://www.datascience-pm.com/crisp-dm-2/
+
+Relatorio Overleaf: 
+https://www.overleaf.com/4624476382mjjzkctbzgvn#d5a646
