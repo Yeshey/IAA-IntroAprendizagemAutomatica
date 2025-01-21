@@ -1,0 +1,63 @@
+\chapter{Modeling}
+\label{chap4:modeling}
+
+4. Modeling
+
+- 4.1. Select modeling techniques - os algoritmos que o stor pede no enunciado
+- 4.2. Generate test design - dependendo do modelo ter diferentes valores de sets de train, teste e validation
+- 4.3. Build model - implementar os modelos
+- 4.4. Assess model - interpretar os resultados dos modelos e comprara-los e testalos entre eles para ver qual/quais são os melhores
+
+% SUPERVISED LEARNING
+\section{\textit{Supervised Learning} (João)}
+\label{chap4:super}
+
+\subsection{\textit{Decision Trees}}
+\label{chap4:decision_tree}
+
+Os modelos de \textit{Decision Trees} são amplamente reconhecidos pela sua elevada interpretabilidade, uma vez que o processo de tomada de decisão pode ser visualizado através da árvore gerada. Este método, no entanto, não está livre de \textit{overfitting}, árvores muito complexas podem indicar este fenómeno.
+
+\begin{itemize}
+    \item \textbf{Importância das variáveis:} Permite-nos identificar as variáveis mais relevantes para os fins do modelo. A Figura \ref{fig:feature_importance} ilustra as variáveis mais relevantes identificadas.
+    \item \textbf{Visualização da árvore de decisão:} A estrutura da árvore, ilustrada na Figura \ref{fig:decision_tree_structure}, demonstra como os dados são particionados em cada nó com base no corte que fornece mais informação. Neste caso, a variável identificada e usada para o nodo raiz foi o `Age\_Category`. 
+\end{itemize}
+
+As Figuras \ref{fig:decision_tree_overview}, \ref{fig:feature_importance} e \ref{fig:decision_tree_structure} apresentam respetivamente a matriz de confusão com métricas e tempos, a importância das variáveis e a visualização da estrutura da árvore.
+
+
+\subsection{\textit{Multi-layer Perceptron}}
+\label{chap4:percetrao}
+
+Enquanto as \textit{Decision Trees}, não eram afetadas pela normalização dos dados, no modelo \textit{Multi-layer Perceptron} (MLP) já se verifica uma melhoria significativa dos resultados ao utilizar bases de dados normalizadas
+
+Pode-se verificar na Figura~\ref{fig:mlp_overview} que não está há \textit{overfitting} de nenhuma forma significativo, uma vez que a performance do modelo é parecida quando aplicada de novo ao training set e quando aplicada ao testing set.
+
+Podemos ver também na Figura~\ref{fig:mlp_training_loss} como o erro da \textit{loss function} vai diminuindo ao longo das iterações como é esperado.
+
+
+
+\subsection{\textit{k-NN}}
+\label{chap4:k-nn}
+
+O modelo de \textit{k-Nearest Neighbors} (k-NN) foi implementado com \(k=3\), ou seja, utilizando os 3 pontos mais próximos para fazer a previsão. Como era esperado, este método exibiu tempos de treino mínimos e tempos de teste mais elevados devido ao cálculo das distâncias. 
+
+Na Figura~\ref{fig:knn_pca} pode-se ver uma distribuição dos dados no espaço reduzido para dimensões pela análise de duas componentes principais para uma representação 2D. Desta forma é possível ter uma ideia de como é que o método funcionará, dá para ver como pontos que representam doença têm tendência a estar juntos e vice versa.
+
+
+
+
+
+
+
+
+% UNSUPERVISED LEARNING
+\section{\textit{Unsupervised Learning} (Vicente)}
+\label{chap4:unsuper}
+
+\subsection{\textit{KMeans}}
+\label{chap4:kmenas}
+
+O primeiro método de aprendizagem não supervisionada implementado foi o KMeans
+
+\subsection{\textit{DBSCAN}}
+\label{chap4:dbscan}

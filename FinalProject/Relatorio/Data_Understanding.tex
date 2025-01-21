@@ -1,0 +1,49 @@
+\chapter{\textit{Data Understanding} (Vicente)}
+\label{chap2:data_und}
+
+% PERGUNTA 1
+\section{O \textit{dataset}}
+\label{chap2:dataset}
+
+O \textit{dataset} utilizado para o objetivo do trabalho é composto por 19 categorias, onde cada uma delas tem 308854 atributos dando um total de 5868226 dados para serem trabalhados, sendo a composição de cada categoria a seguinte:
+
+\begin{enumerate}
+  \item \textbf{General Health}: Indica a opinião do indivíduo à certa da sua saúde geral, tem como respostas: 'Excellent', 'Fair', 'Good', etc.
+  \item \textbf{Checkup}: Indica qual foi a última vez que o individuo foi ao médico, tem como respostas: 'Never', 'Within the past year', etc.
+  \item \textbf{Exercise}: Indica se o indivíduo fez algum tipo exercício físico nos ultimos 30 dias, tem como resposta 'Yes' ou 'No'.
+  \item \textbf{Heart Disease}: Indica se o individuo tem ou já teve alguma doença coronária ou angina, tem como respostas 'Yes' ou 'No'.
+  \item \textbf{Skin Cancer}: Indica se o individuo tem ou já teve cancro da pele, tem com respostas 'Yes' ou 'No'.
+  \item \textbf{Other Cancer}: Indica se o individuo tem ou já teve outro tipo de cancro, tem com respostas 'Yes' ou 'No'.
+  \item \textbf{Depression}: Indica se o individuo tem ou já teve qualquer tipo transtorno depressivo, tem com respostas 'Yes' ou 'No'.
+  \item \textbf{Diabetes}: Indica se o individuo tem ou já teve diabetes, tem como respostas: 'No,' 'No, pre-diabetes or borderline diabetes', 'Yes' e
+ 'Yes, but female told only during pregnancy'.
+  \item \textbf{Arthritis}: Indica se o indivíduo alguma vez foi diagnosticado com artrite, tem com respostas 'Yes' ou 'No'.
+  \item \textbf{Sex}: Indica o sexo do indivíduo, tem como respostas 'Female' ou 'Male'.
+  \item \textbf{Age Category}: Indica a idade do indivíduo, tem como respostas: '18-24' '25-29' '30-34' ... '80+'.
+  \item \textbf{Height (cm)}: Indica a altura do indivíduo sem sapatos em centímetros, tem como respostas: '91.0', '94.0', '96.0', '97.0', '99.0', etc.
+  \item \textbf{Weight (kg)}: Indica o peso do indivíduo em sapatos em quilogramas, tem como respostas: '24.95', '25.4', '26.31', '26.76', etc.
+  \item \textbf{BMI}: Indica o Índice Massa Corporal do indivíduo, tem como respostas: '12.02', '12.05', '12.11', etc.
+  \item \textbf{Smoking History}: Indica se o individuo fuma ou não, tem como respostas 'Yes' ou 'No'.
+  \item \textbf{Alcohol Consumption}: Indica quantas vezes o indivíduo bebeu qualquer tipo de bebidas alcoólicas nos últimos 30 dias, tem como respostas: '0', '1', '2', '3', etc.
+  \item \textbf{Fruit Consumption}: Indica quantas vezes o indivíduo come fruta, tem como respostas: '0', '1', '2', '3', etc.
+  \item \textbf{Green Vegetables Consumption}: Indica quantas vezes  o indivíduo come verduras, tem como respostas: '0', '1', '2', '3', etc.
+  \item \textbf{FriedPotato Consumption}: Indica quantas vezes o indivíduo come qualquer tipo de batatas fritas, tem como respostas: '0', '1', '2', '3', etc.
+\end{enumerate}
+
+O \textit{dataset} é bem estruturado, com a maioria dos dados claros e de fácil compreensão, no entanto, existem algumas inconsistências que gostaria de apontar.
+    
+Em relação às categorias 'Alcohol Consumption', 'Fruit Consumption', 'Green Vegetables Consumption' e 'FriedPotato Consumption' (categorias 16, 17, 18 e 19 respetivamente), existe uma inconsistência nos dados adquiridos, as categorias 18 e 19 têm os seus valores entre 0 e 128, a categoria 17 tem os seus valores entre 0 e 120 e a categoria 16 tem os seus valores entre 0 e 30. Isto causa uma grande confusão, pois elas estão todas no mesmo tipo de pergunta, porém devolvem dados diferentes, e isto acontece, pois a pergunta realizada em relação à categoria 16 foi "quantas vezes bebeu álcool nos últimos 30 dias?", e a pergunta realizada para as outras foi "quantas vezes é que come x?". Para ter um \textit{dataset} mais simples e consistente, a questão feita na recolha de dados para as categorias de consumo de comida/bebida deveriam ter sido as mesmas com os mesmos parâmetros de resposta.
+
+As outras inconsistências são menos relevantes que a última e facilmente resolvidas. A categoria 'Age category' apresenta as idades dos indivíduos como pequenos passos entre idades (25 aos 29 anos, 30 aos 34 anos, etc.) mas para a categoria 'Height (cm)' e 'Weight (kg)' isto não acontece, tendo as duas o peso e altura precisa do indivíduo, o que resulta numa quantidade de dados maior que o necessário. Além disso, os valores da categoria 'BMI' apresentam um pequeno desvio do valor real do BMI, e a minha previsão do porquê de isto ocorrer, é porque originalmente o peso e altura eram obtidos em \textit{Feet} e \textit{Inches} e o peso em \textit{pounds} e após a sua conversão para centímetros e quilogramas leva a pequenos desvios no valor original e não foi recalculado o 'BMI'. 
+
+Além destas inconsistências, que serão resolvidas no \ref{chap3:data}, o \textit{dataset} é bem estruturado, todos os seus valores correspondentes à realidade e não existem valores em falta.
+
+Tudo o que foi dito neste capítulo pode ser visualizado gráficamente no código enviado.
+
+
+% 2. Data Understanding - Vicente
+
+%- 2.1. Collect initial data - ler os dados todos
+%- 2.2. Describe data - examinar os dados e descreve-los, as suas propriedades, numero de ocorrencia, etc.
+%- 2.3. Explore data - explorar os dados, visualizalos, ver padroes, etc.
+%- 2.4. Verify data quality - verificar a integridade dos dados, ver se tem erros, inconsistencias, etc.

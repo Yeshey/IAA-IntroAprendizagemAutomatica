@@ -1,0 +1,53 @@
+\chapter{Evaluation}
+\label{chap:ev}
+
+\section{Avaliar Resultados}
+\label{chap:ev:results}
+
+Nesta secção, avaliamos os resultados obtidos para os diferentes modelos, considerando as métricas de desempenho, os tempos de execução e o impacto de diferentes formas de preparação dos dados (original, normalizado, discretizado, etc.).
+
+As quatro métricas principais utilizadas para avaliar os modelos são \textit{accuracy}, \textit{precision}, \textit{recall} e \textit{F1-score}. \textit{Accuracy} mede a proporção de previsões corretas, \textit{precision} avalia a taxa previsões corretas nas previsões positivas e \textit{recall} mede a capacidade de identificar corretamente os casos positivos. O \textit{F1-score} surge como um compromisso que equilibra \textit{precision} e \textit{recall}.
+
+\[
+\begin{array}{ll}
+\text{Accuracy} & \displaystyle \frac{TP + TN}{TP + TN + FP + FN} \\[2ex]
+\text{Precision} & \displaystyle \frac{TP}{TP + FP} \\[2ex]
+\text{Recall} & \displaystyle \frac{TP}{TP + FN} \\[2ex]
+\text{F1-score} & \displaystyle 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}
+\end{array}
+\]
+
+\noindent Onde:
+\begin{itemize}
+    \item TP (\textit{True Positives}): Casos positivos corretamente identificados
+    \item TN (\textit{True Negatives}): Casos negativos corretamente identificados
+    \item FP (\textit{False Positives}): Casos negativos classificados erroneamente como positivos
+    \item FN (\textit{False Negatives}): Casos positivos classificados erroneamente como negativos
+\end{itemize}
+
+
+\subsection{Comparação Geral dos Modelos}
+A Figura~\ref{fig:model_comparison} apresenta uma representação geral da performance dos modelos. Através daqui pode-se verificar que o modelo com maior taxa de sucesso geral, ou um melhor valor na métrica F1 foi o modelo das Decision Trees.
+
+Nas Figuras \ref{fig:decision_trees_comparison}, \ref{fig:knn_comparison} e \ref{fig:mlp_comparison} conseguimos ver o desempanho dos modelos \textit{Decision Trees}, \textit{Knn} e \textit{Multi Layer Perceptron} respetivamente, quando aplicados a bases de dados tratadas de diferentes formas.
+
+Após uma análise e comparação de todos os métodos, concluímos que o método que nos deu resultados mais desejados, com um F1-Score de 0.217 for o o modelo da \textit{Decision Tree} quando aplicado a uma base de dados Discretizada.
+
+\section{Processo de Revisão}
+\label{chap:ev:review}
+
+Uma revisão crítica ao trabalho realizado permite identificar pontos fortes, fracos e áreas de melhoria:
+\begin{itemize}
+    \item \textbf{Pontos fortes:} A metodologia CRISP-DM garantiu uma abordagem estruturada, fomos capazes de aplicar, treinar, comparar e analisar vários modelos de aprendizagem automática diferentes acabando agora com uma visão mais completa sobre o seu funcionamento num contexto mais prático.
+    \item \textbf{Áreas de melhoria:} O baixo desempenho em termos de precisão e recall, e consequentemente no F1-score, pode ser problemático para o diagnóstico de pessoas, especificamente \textit{False Positives} e \textit{True Negatives}
+    \item \textbf{Pré-processamento:} Num trabalho futuro podia ser interessante explorar uma base dados não filtrada que nos obrigasse a pensar criticamente sobre valores em falta e como lidar com eles sem termos que ser nós a simular este caso.
+\end{itemize}
+
+\section{Próximos Passos}
+\label{chap:ev:next_steps}
+
+Com base nos resultados obtidos, consideramos:
+\begin{itemize}
+    \item \textbf{\textit{Deployment}:} O modelo de \textit{Decision Trees}, devido à sua interpretabilidade e eficiência, é uma escolha adequada para \textit{deployment}. Apesar da \textit{accuracy} ser alta, quando o modelo prevê um "Sim", como é muito mais alto o teor de pessoas que não têm doença, ainda é mais provável que o paciente não tenha do que tenha, causando assim o \textit{Base Rate Neglect}\cite{wikipedia_base_rate_fallacy}. Sedo por isso importante obter uma segunda opinião Médica. 
+    \item \textbf{Melhorias potenciais:} Expandir o trabalho para incluir técnicas mais complexas e testar com bases de dados maiores.
+\end{itemize}

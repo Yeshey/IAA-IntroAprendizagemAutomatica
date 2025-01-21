@@ -1,0 +1,27 @@
+\chapter{\textit{Business Understanding} (João)}
+\label{chap:bus}
+
+\section{Definir Objetivos de Negócio}
+Na fase inicial do CRISP-DM, o foco esteve em alinhar os objetivos do projeto com as necessidades práticas, o principal objetivo do projeto é prever a probabilidade de ocorrência de doenças cardíacas com base em dados comportamentais e demográficos. O sucesso do projeto será avaliado com base na precisão dos modelos e das suas previsões.
+
+\section{Avaliar a Situação}
+Avaliámos os recursos disponíveis, os requisitos, e os potenciais riscos que poderiamos enfrentar:
+\begin{itemize}
+    \item \textbf{Dados:} Dataset público BRFSS, fornecido pelo \textit{Centers for Disease Control and Prevention (CDC)} \citep{brfss2021}.
+    \item \textbf{Requisitos:} Tratar dados, lidar com dados em falta, normalizar, discretizar, reduzir e preparar o dataset para modelos supervisionados e não supervisionados.
+    \item \textbf{Riscos:} Possível baixa qualidade, overfitting e eventuais limitações de generalização dos modelos.
+\end{itemize}
+
+\section{Plano e estrutura do Projeto}
+
+Desde o inicio que foi planeada e acordada uma estrutura funcional para o projeto onde os modelos pudessem devolver sempre a mesma estrutura de dados que pudesse depois ser alimentada às funções de visualização, criando assim uma distinção entre o a interface e a lógica.
+\begin{itemize}
+    \item \textbf{Ferramentas:} Uso de \texttt{Python} em junção com Jupyter Notebooks, bibliotecas como \texttt{scikit-learn} e \texttt{pandas}, e \LaTeX para documentação.
+    \item \textbf{Etapas por ordem cronológica:}
+    \begin{enumerate}
+        \item Análise inicial dos dados e exploração.
+        \item Preparação dos dados, incluindo tratamento de valores em falta e normalização.
+        \item Desenvolvimento dos modelos de previsão.
+        \item Comparação e interpretação dos resultados obtidos.
+    \end{enumerate}
+\end{itemize}
