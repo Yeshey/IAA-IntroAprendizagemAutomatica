@@ -29,6 +29,8 @@
             matplotlib
             scikit-learn
             seaborn
+            pkgs.texlive.combined.scheme-full  # Full TeX Live installation
+            pkgs.texlivePackages.luatex       # Add luatex support
           ]))
         ];
 
