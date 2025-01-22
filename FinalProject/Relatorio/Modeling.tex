@@ -1,12 +1,6 @@
 \chapter{Modeling}
 \label{chap4:modeling}
 
-4. Modeling
-
-- 4.1. Select modeling techniques - os algoritmos que o stor pede no enunciado
-- 4.2. Generate test design - dependendo do modelo ter diferentes valores de sets de train, teste e validation
-- 4.3. Build model - implementar os modelos
-- 4.4. Assess model - interpretar os resultados dos modelos e comprara-los e testalos entre eles para ver qual/quais são os melhores
 
 % SUPERVISED LEARNING
 \section{\textit{Supervised Learning} (João)}
@@ -41,7 +35,7 @@ Podemos ver também na Figura~\ref{fig:mlp_training_loss} como o erro da \textit
 
 O modelo de \textit{k-Nearest Neighbors} (k-NN) foi implementado com \(k=3\), ou seja, utilizando os 3 pontos mais próximos para fazer a previsão. Como era esperado, este método exibiu tempos de treino mínimos e tempos de teste mais elevados devido ao cálculo das distâncias. 
 
-Na Figura~\ref{fig:knn_pca} pode-se ver uma distribuição dos dados no espaço reduzido para dimensões pela análise de duas componentes principais para uma representação 2D. Desta forma é possível ter uma ideia de como é que o método funcionará, dá para ver como pontos que representam doença têm tendência a estar juntos e vice versa.
+Na Figura~\ref{fig:knn_pca} pode-se ver uma distribuição dos dados no espaço reduzido para dimensões pela análise de duas componentes principais para uma representação 2D. Desta forma é possível ter uma ideia de como é que o método funcionará, dá para ver como pontos que representam doença têm tendência a estar juntos e vice-versa.
 
 
 
@@ -57,7 +51,9 @@ Na Figura~\ref{fig:knn_pca} pode-se ver uma distribuição dos dados no espaço 
 \subsection{\textit{KMeans}}
 \label{chap4:kmenas}
 
-O primeiro método de aprendizagem não supervisionada implementado foi o KMeans
+O primeiro método de aprendizagem não supervisionada implementado foi o KMeans, que é um método de \textit{clustering} que utiliza um certo número de \textit{clusters} e a proximidade dos pontos a eles para a classificação do \textit{dataset}. Neste caso para encontrar o melhor número de clusters foi utilizado o método do cotovelo \cite{cotovelo_kmeans} que testa o \textit{KMeans} com vários números de \textit{clusters} diferentes para encontrar o melhor.
 
 \subsection{\textit{DBSCAN}}
 \label{chap4:dbscan}
+
+O outro método utilizado foi o DBSCAN que é um método de \textit{clustering}, mas ao contrário do KMeans, este método utiliza \textit{clusters} para encontrar áreas de alta densidade. Para encontrar os melhores parâmetros para este método também foi utilizado o método do cotovelo \cite{cotovelo_dbscan}.

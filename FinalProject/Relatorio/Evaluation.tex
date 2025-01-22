@@ -38,7 +38,7 @@ Após uma análise e comparação de todos os métodos, concluímos que o métod
 
 Uma revisão crítica ao trabalho realizado permite identificar pontos fortes, fracos e áreas de melhoria:
 \begin{itemize}
-    \item \textbf{Pontos fortes:} A metodologia CRISP-DM garantiu uma abordagem estruturada, fomos capazes de aplicar, treinar, comparar e analisar vários modelos de aprendizagem automática diferentes acabando agora com uma visão mais completa sobre o seu funcionamento num contexto mais prático.
+    \item \textbf{Pontos fortes:} A metodologia CRISP-DM garantiu uma abordagem estruturada, fomos capazes de aplicar, treinar, comparar e analisar vários modelos de aprendizagem automática diferentes, deixando-nos com uma visão mais completa sobre os seus funcionamentos num contexto mais prático.
     \item \textbf{Áreas de melhoria:} O baixo desempenho em termos de precisão e recall, e consequentemente no F1-score, pode ser problemático para o diagnóstico de pessoas, especificamente \textit{False Positives} e \textit{True Negatives}
     \item \textbf{Pré-processamento:} Num trabalho futuro podia ser interessante explorar uma base dados não filtrada que nos obrigasse a pensar criticamente sobre valores em falta e como lidar com eles sem termos que ser nós a simular este caso.
 \end{itemize}
@@ -48,6 +48,6 @@ Uma revisão crítica ao trabalho realizado permite identificar pontos fortes, f
 
 Com base nos resultados obtidos, consideramos:
 \begin{itemize}
-    \item \textbf{\textit{Deployment}:} O modelo de \textit{Decision Trees}, devido à sua interpretabilidade e eficiência, é uma escolha adequada para \textit{deployment}. Apesar da \textit{accuracy} ser alta, quando o modelo prevê um "Sim", como é muito mais alto o teor de pessoas que não têm doença, ainda é mais provável que o paciente não tenha do que tenha, causando assim o \textit{Base Rate Neglect}\cite{wikipedia_base_rate_fallacy}. Sedo por isso importante obter uma segunda opinião Médica. 
+    \item \textbf{\textit{Deployment}:} O modelo de \textit{Decision Trees}, devido à sua interpretabilidade e eficiência, é uma escolha adequada para \textit{deployment}. Apesar da \textit{accuracy} ser alta, quando o modelo prevê um "Sim", como é muito mais alto o teor de pessoas que não têm doença, ainda é mais provável que o paciente esteja saudável do que doente, temos por isso que ter aqui em conta a falácia do \textit{Base Rate Neglect}\cite{wikipedia_base_rate_fallacy} para interpretar e utilizar os dados do(s) modelos, sendo por isto importante obter uma segunda opinião Médica. 
     \item \textbf{Melhorias potenciais:} Expandir o trabalho para incluir técnicas mais complexas e testar com bases de dados maiores.
 \end{itemize}
